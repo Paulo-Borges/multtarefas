@@ -1,0 +1,26 @@
+.header {
+    position: relative;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.button {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    list-style: none;
+}
+.button li {
+    border: 1px solid var(--White-0);
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin-left: 30px;
+}
+.button button{
+    display: flex;
+    color: var(--White-0);
+    background: transparent;
+    border: none;
+}

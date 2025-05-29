@@ -23,24 +23,10 @@ body {
     align-items: center;
     height: 100vh;
 }
-img {
-    display: block;
-    max-width: 100%;
-}
 .container {
     width: 23.43rem;
     height: 41.68rem;
     border: 1px solid gray;
-}
-.header {
-    position: relative;
-}
-.button {
-    display: flex;
-    position: absolute;
-    top: 30px;
-    left: 100px;
-    list-style: none;
 }
 .base {
     width: 23.43rem;
