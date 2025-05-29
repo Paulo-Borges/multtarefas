@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+}
+:root {
+    --Blue-50: hsl(231, 100%, 99%);
+    --Blue-100: hsl(218, 100%, 97%);
+    --Blue-200: hsl(206, 94%, 87%);
+    --Blue-300: hsl(228, 100%, 84%);
+    --Blue-950: hsl(213, 96%, 18%);
+    --Grey-500: hsl(231, 11%, 63%);
+    --Purple-200: hsl(229, 24%, 87%);
+    --Purple-600: hsl(243, 100%, 62%);
+    --Red-500: hsl(354, 84%, 57%);
+    --White-0: hsl(0, 100%, 100%);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.container {
+    width: 23.43rem;
+    height: 41.68rem;
+    border: 1px solid gray;
+}
+.header {
+    position: relative;
+}
+.button {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    list-style: none;
+}
+.base {
+    width: 23.43rem;
+    height: 23.43rem;
+    background: var(--Blue-50);
+}
