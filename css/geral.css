@@ -32,4 +32,5 @@ body {
     width: 23.43rem;
     height: 23.43rem;
     background: var(--Blue-50);
+    position: relative;
 }

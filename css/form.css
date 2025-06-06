@@ -1,0 +1,26 @@
+.form {
+    display: block;
+    margin: 20px;
+    font-family: "Ubuntu", sans-serif;
+    padding: 20px;
+    padding-top: 30px;
+    background: var(--White-0);
+    box-shadow: 0.3em 0.3em 1em var(--Purple-200);
+    border-radius: 8px;
+    position: absolute;
+    top: -90px;
+}
+.form h1 {
+    color: var(--Blue-950);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.3rem;
+}
+.formName {
+    display: grid;
+}
+.formEmail {
+    display: grid;
+}
+.formPhone {
+    display: grid;
+}
