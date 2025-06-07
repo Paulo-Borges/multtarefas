@@ -12,8 +12,29 @@
 }
 .form h1 {
     color: var(--Blue-950);
+    margin-bottom: 20px;
     font-family: "Ubuntu", sans-serif;
     font-size: 1.3rem;
+}
+.form p {
+    color: var(--Grey-500);
+    margin-bottom: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.8rem;
+}
+.form label {
+    font-size: 0.7rem;
+    text-transform: capitalize;
+}
+.form input {
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid var(--Grey-500) ;
+    height: 2rem;
+}
+.form input::placeholder {
+    font-size: 0.7rem;
+    padding-left: 10px;
 }
 .formName {
     display: grid;
