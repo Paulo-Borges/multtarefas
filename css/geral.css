@@ -27,9 +27,50 @@ body {
     width: 23.43rem;
     height: 40rem;
 }
+.desktopHeader {
+        display: none ;
+    }
 .base {
     width: 23.43rem;
     height: 23.43rem;
     background: var(--Blue-50);
     position: relative;
+}
+
+@media(min-width:376px) {
+    .container {
+        display: flex;
+        border: 1px solid gray;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        width: 60rem;
+        height: 38rem;
+        background: orange;
+    }
+    .mobileHeader {
+        display: none;
+    }
+    .desktopHeader {
+        display: flex ;
+        justify-content: space-between;
+        position: relative;
+    }
+    ul.button {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    }
+    .button li {
+        margin-bottom: 20px;
+    }
+    /* .button button{
+        display: flex;
+        color: var(--White-0);
+        background: transparent;
+        border: none;
+    } */
+
 }
