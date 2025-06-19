@@ -12,11 +12,22 @@ img {
     left: 50px;
     list-style: none;
 }
+.button li.ativo {
+    border: transparent;
+    background: var(--Blue-300);
+}
+.button button.ativo {
+    color: var(--Blue-950);
+}
 .button li {
     border: 1px solid var(--White-0);
     border-radius: 30px;
     padding: 5px 10px;
     margin-left: 30px;
+    cursor: pointer;
+}
+.button li:hover {
+    border: 1px solid var(--Red-500);
 }
 .button button{
     display: flex;

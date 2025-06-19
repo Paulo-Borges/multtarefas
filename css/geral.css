@@ -36,6 +36,11 @@ body {
     background: var(--Blue-50);
     position: relative;
 }
+.btn-transition {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 6%;
+}
 
 @media(min-width:376px) {
     .container {
