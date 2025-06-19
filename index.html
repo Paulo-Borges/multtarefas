@@ -16,7 +16,7 @@
             <img class="desktopHeader" src="./assets/images/bg-sidebar-desktop.svg" alt="Fundo">
             <nav>
                 <ul class="button">
-                    <li><button>1</button></li>
+                    <li class="ativo"><button class="ativo">1</button></li>
                     <li><button>2</button></li>
                     <li><button>3</button></li>
                     <li><button>4</button></li>
@@ -24,8 +24,8 @@
             </nav>
         </header>
         <div class="desktopBase">
-        <section class="base">
-            <form class="form">
+        <section class="base" id="base">
+            <form class="form" id="form-primary">
                 <h1>Personal info</h1>
                 <p>Please provide your name, email address, and phone number.</p>
                 <div class="formName">
@@ -38,16 +38,19 @@
                 </div>
                 <div class="formPhone">
                     <label for="phone" id="phone">phone number</label>
-                    <input type="number" id="phone" placeholder="+55 2198614-9579">
+                    <input type="tel" id="phone" placeholder="+55 2198614-9579">
                 </div>
                 
             </form>
         </section>
-        <button class="button-next">next step</button>
+        <div class="btn-transition">
+        <button class="button-go">Go Back</button>
+        <button class="button-next" id="buttonNext">next step</button>
+        </div>
         </div>
     </main>
 
 
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>
