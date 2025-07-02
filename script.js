@@ -2,7 +2,8 @@
 const buttonNext = document.querySelector('#buttonNext')
 const formPrimary = document.querySelector('#form-primary')
 const formPlan = document.createElement('form')
-// aonde vai o novo form 
+const buttonGo = document.querySelector('#button-go') 
+const btnTransition = document.querySelector('#btn-transition')
 const base = document.querySelector('#base')
 
 
@@ -13,7 +14,8 @@ buttonNext.addEventListener('click', function() {
     formPlan.classList.add('plan')
     formPlan.classList.add('form')
 
-
+    buttonGo.style.display = 'flex'
+    btnTransition.style.justifyContent = 'space-between'
     formPrimary.style.display = 'none'
     formPlan.innerHTML = ` 
          <h1>Select your plan</h1>
