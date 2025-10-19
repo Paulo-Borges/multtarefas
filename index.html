@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Formulário MultiEtapas</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="container">
-        <header class="header">
-            <img class="mobileHeader" src="./assets/images/bg-sidebar-mobile.svg" alt="Fundo">
-            <img class="desktopHeader" src="./assets/images/bg-sidebar-desktop.svg" alt="Fundo">
-            <nav>
-                <ul class="button">
-                    <li class="ativo"><button class="ativo">1</button></li>
-                    <li><button>2</button></li>
-                    <li><button>3</button></li>
-                    <li><button>4</button></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="desktopBase">
+      <header class="header">
+        <img
+          class="mobileHeader"
+          src="./assets/images/bg-sidebar-mobile.svg"
+          alt="Fundo mobile"
+        />
+        <img
+          class="desktopHeader"
+          src="./assets/images/bg-sidebar-desktop.svg"
+          alt="Fundo header"
+        />
+        <nav>
+          <ul class="button">
+            <li class="ativo">
+              <button class="ativo" aria-current="step">1</button>
+            </li>
+            <li><button>2</button></li>
+            <li><button>3</button></li>
+            <li><button>4</button></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="desktopBase">
         <section class="base" id="base">
-            <form class="form" id="form-primary">
-                <h1>Personal info</h1>
-                <p>Please provide your name, email address, and phone number.</p>
-                <div class="formName">
-                    <label for="name" id="name">name</label>
-                    <input type="text" id="name" placeholder="Borges">
-                </div>
-                <div class="formEmail">
-                    <label for="email" id="email">email address</label>
-                    <input type="email" id="email" placeholder="devborges50@gmail.com">
-                </div>
-                <div class="formPhone">
-                    <label for="phone" id="phone">phone number</label>
-                    <input type="tel" id="phone" placeholder="+55 2198614-9579">
-                </div>
-                
-            </form>
+          <form class="form" id="form-primary">
+            <h1>Personal info</h1>
+            <p>Please provide your name, email address, and phone number.</p>
+            <div class="formName">
+              <label for="name">name</label>
+              <input type="text" id="input-name" placeholder="Borges" />
+            </div>
+            <div class="formEmail">
+              <label for="email">email address</label>
+              <input
+                type="email"
+                id="input-email"
+                placeholder="devborges50@gmail.com"
+              />
+            </div>
+            <div class="formPhone">
+              <label for="phone">phone number</label>
+              <input
+                type="tel"
+                id="input-phone"
+                placeholder="+55 2198614-9579"
+              />
+            </div>
+          </form>
         </section>
         <div class="btn-transition" id="btn-transition">
-        <button class="button-go" id="button-go">Go Back</button>
-        <button class="button-next" id="buttonNext">next step</button>
+          <button class="button-go" id="button-go" style="visibility: hidden">
+            Go Back
+          </button>
+          <button class="button-next" id="buttonNext">next step</button>
         </div>
-        </div>
+      </div>
     </main>
 
-
     <script type="module" src="./script.js"></script>
-</body>
+  </body>
 </html>

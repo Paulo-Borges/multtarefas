@@ -1,23 +1,23 @@
 // pegar o botao, pegar o form e pegar base onde vai ficar novo form
-const buttonNext = document.querySelector('#buttonNext')
-const formPrimary = document.querySelector('#form-primary')
-const formPlan = document.createElement('form')
-const buttonGo = document.querySelector('#button-go') 
-const btnTransition = document.querySelector('#btn-transition')
-const base = document.querySelector('#base')
+const buttonNext = document.querySelector("#buttonNext");
+const formPrimary = document.querySelector("#form-primary");
+const formPlan = document.createElement("form");
+const buttonGo = document.querySelector("#button-go");
+const btnTransition = document.querySelector("#btn-transition");
+const base = document.querySelector("#base");
 
-
-// ficar ouvindo o clique do botão 
+buttonGo.style.visibility = "hidden";
+// ficar ouvindo o clique do botão
 // tira o formulario antigo
-// e coloca o novo formulario  
-buttonNext.addEventListener('click', function() {
-    formPlan.classList.add('plan')
-    formPlan.classList.add('form')
+// e coloca o novo formulario
+buttonNext.addEventListener("click", function () {
+  formPlan.classList.add("plan");
+  formPlan.classList.add("form");
 
-    buttonGo.style.display = 'flex'
-    btnTransition.style.justifyContent = 'space-between'
-    formPrimary.style.display = 'none'
-    formPlan.innerHTML = ` 
+  buttonGo.style.display = "flex";
+  btnTransition.style.justifyContent = "space-between";
+  formPrimary.style.display = "none";
+  formPlan.innerHTML = ` 
          <h1>Select your plan</h1>
          <p>You have the option of monthly or yearly biling.</p>
         <div class="planArcade">
@@ -58,6 +58,6 @@ buttonNext.addEventListener('click', function() {
            yearly
           </div>
         </div>
-    `
-    base.appendChild(formPlan)
-})
+    `;
+  base.appendChild(formPlan);
+});
